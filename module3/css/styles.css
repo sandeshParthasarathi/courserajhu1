@@ -44,9 +44,10 @@ section {
 }
 
 #chicken, #beef, #sushi {
-	font-family:;
+	font-family:arial ;
 	font-size:1.8em;
 	font-weight: bold;
+	padding-top:8px;
 }
 #chicken-div {
   margin-bottom: 10px;
