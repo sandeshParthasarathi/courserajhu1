@@ -43,51 +43,11 @@ section {
   overflow: auto;
 }
 
-
-#chicken {
-  border: 1px solid black;
-  width: 40%;
-  height:40px;
-  text-align:center;
-  position:relative;
-  left:60%;
-  margin-top: 0;
-  margin-bottom: 0 ; 
-  padding:auto;
-  background-color: #ff4500;
-  color:#ffffff;
-  font-size: 1.5em;
+#chicken, #beef, #sushi {
+	font-family:;
+	font-size:1.8em;
+	font-weight: bold;
 }
-
-#beef {
-  border: 1px solid black;
-  width: 40%;
-  height:40px;
-  text-align:center;
-  position:relative;
-  left:60%;
-  margin-top: 0px;
-  margin-bottom: 0 ; 
-  padding:auto;
-  background-color: #ffffff;
-  color: #0000ff;
-  font-size: 1.5em;
-}
-#sushi {
-  border: 1px solid black;
-  width: 40%;
-  height:40px;
-  text-align:center;
-  position:relative;
-  left:60%;
-  margin-top: 0;
-  margin-bottom: 0 ; 
-  padding: auto;
-  background-color: #228B22;
-  color: #ffffff;
-  font-size: 1.5em;
-}
-
 #chicken-div {
   margin-bottom: 10px;
   margin-top: 10px;
