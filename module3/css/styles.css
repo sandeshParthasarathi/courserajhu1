@@ -1,12 +1,14 @@
-/* Base Styles */
+
+  /********** Base styles **********/
 
 * {
   box-sizing: border-box;
+  font-family:arial, helvetica, sans-serif; 
 }
 
 body {
   font-size: 16px;
-  color: #000000; 
+  color: #000000;
   background-color: #ffffff;
   font-family: 'Oxygen', sans-serif;
 }
@@ -19,14 +21,15 @@ body {
 }
 
 .navbar-brand {
-  padding-top: 20px;
-  border:1px soloid #000000 ;
+  padding: 0;
+  margin-bottom:20px;
 }
 
-.navbar-brand p { /* Restaurant name */
+navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
-  font-size: 1.5em;
+  font-size: 1.8em;
+  font-weight:bold;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
@@ -35,51 +38,38 @@ body {
   line-height: .75;
 }
 
-#collapsable-nav #nav-list{
-background-color: #ffffff;
-}
-
 #nav-list {
-  margin-top: 0;
+  margin-top:0;
   margin-bottom:0;
-  border:1px solid #000000;
+  background-color:#ffffff;
 }
 
 #nav-list a {
   color: #951C49;
-  border:1px solid #000000;
-  text-align: center;
+text-align: center;
+border:1px solid #000000;
 }
 
 #nav-list a:hover {
   background: #E7E7E7;
 }
-
 #nav-list a span {
   font-size: 1.8em;
 }
 
-navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
+  
 }
-
 .navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
+  clear:both;
+  margin-top: -60px;
+  margin-bottom:40px;
 }
-/* END HEADER */
 
 /* SECTION */
-
-div.row h1 {
-  margin-bottom: 15px;
-  text-align:center;
-  font-size:1.7em;
-}
-
-div.row p {
-  width: 95%;
-  padding:15px;
+p {
+   padding:15px;
   margin: 10px;
   color: black;
   float: left;
@@ -95,15 +85,12 @@ div.row p {
 }
 
 
-.section {
+div.section {
   border: 1px solid black;
   width:100%;
-  height:auto;
   position:relative;
   overflow:auto;
   background-color: #D3D3D3;
-  margin-bottom:20px;
-  margin-top:20px:
 }
 
 #chicken {
@@ -115,10 +102,10 @@ div.row p {
   left:60%;
   margin-top: 0;
   margin-bottom: 0 ; 
-  padding: 5px;
+  padding:auto;
   background-color: #ff4500;
   color:#ffffff;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 #beef {
@@ -130,10 +117,10 @@ div.row p {
   left:60%;
   margin-top: 0px;
   margin-bottom: 0 ; 
-  padding: 5px;
+  padding:auto;
   background-color: #ffffff;
   color: #0000ff;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 #sushi {
@@ -145,22 +132,67 @@ div.row p {
   left:60%;
   margin-top: 0;
   margin-bottom: 0 ; 
-  padding: 5px;
+  padding: auto;
   background-color: #228B22;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
+
+#chicken1, #beef1, #sushi1  {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+
 
 /********** Extra small devices only **********/
 
 @media (max-width: 767px) {
   /* Header */
   
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand {
     padding-top: 10px;
-    font-size: 5vw; 
- }
+    height: 80px;
+    padding-left:10px;
+    margin-left:10px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
 
- #collapsable-nav li { /* Collapsed nav menu text */
-font-size: 1.2em;
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+/* End Header */
+
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
