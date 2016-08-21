@@ -1,9 +1,12 @@
-
-  /********** Base styles **********/
+/* Base Styles */
 
 * {
   box-sizing: border-box;
-  font-family:arial, helvetica, sans-serif; 
+}
+
+h1 {
+  
+  color: #000000;
 }
 
 body {
@@ -13,85 +16,33 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
-/** HEADER **/
-#header-nav {
-  background-color: #f6b319;
-  border-radius: 0;
-  border: 0;
-}
 
-.navbar-brand {
-  padding: 0;
-  margin-bottom:20px;
-}
-
-navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.8em;
-  font-weight:bold;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-}
-
-#nav-list {
-  margin-top:0;
-  margin-bottom:0;
-  background-color:#ffffff;
-}
-
-#nav-list a {
-  color: #951C49;
-text-align: center;
-border:1px solid #000000;
-}
-
-#nav-list a:hover {
-  background: #E7E7E7;
-}
-#nav-list a span {
-  font-size: 1.8em;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
-  
-}
-.navbar-header button.navbar-toggle {
-  clear:both;
-  margin-top: -60px;
-  margin-bottom:40px;
-}
-
-/* SECTION */
 p {
-   padding:15px;
-  margin: 10px;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+section {
+  border: 1px solid #ffffff#ffffff;
+  background-color: #d3d3d3;
+  width: 100%;
+  height: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: black;
-  float: left;
+  position: relative;
+  overflow: auto;
 }
 
-.container{
-  border:none;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:10px;
-  margin-bottom:10px;
-  padding:10px;
-}
-
-
-div.section {
-  border: 1px solid black;
-  width:100%;
-  position:relative;
-  overflow:auto;
-  background-color: #D3D3D3;
-}
 
 #chicken {
   border: 1px solid black;
@@ -122,7 +73,6 @@ div.section {
   color: #0000ff;
   font-size: 1.5em;
 }
-
 #sushi {
   border: 1px solid black;
   width: 40%;
@@ -138,61 +88,58 @@ div.section {
   font-size: 1.5em;
 }
 
-#chicken1, #beef1, #sushi1  {
-  margin-bottom: 15px;
-  margin-top: 15px;
+#chicken-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
+#beef-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
+#sushi-div {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 
-
-/********** Extra small devices only **********/
-
-@media (max-width: 767px) {
-  /* Header */
-  
 .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-    padding-left:10px;
-    margin-left:10px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-  .navbar-brand p { /* Kosher cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img { /* Star-K */
-    height: 20px;
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;
-    margin-right: 5px;
+  font-size: 2em;
+  border: 0 0 10px 10px;
+  color: #ffffff;
+}
+ 
+#collapsable-nav #nav-list{
+	background-color:#FFFFFF;
 }
 
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  /* Header */
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
-  }
-/* End Header */
+#header-nav {
+  border: 0;
+  background-color: #f6b319;
+  color: #FFFFFF;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
 
 
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 100%;
-  }
+
+.nav-brand {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+
+hr {
+  border-color: #000000;
+}
+
+.item {
+  color: #000000;
+  font-size: 1.4em;
 }
